@@ -12,11 +12,31 @@
     <title>Atividade03</title>
   </head>
   <body>
-    <h1>Clique e veja</h1>
-    <h2>
-      <a href="../infrastructure/pages/top-linguagens.html"
-        >As 10 linguagens mais usadas em 2024</a
-      >
-    </h2>
+    <picture>
+      <!-- Imagem para telas pequenas (até 600px de largura) -->
+      <source
+        media="(max-width: 600px)"
+        srcset="../infrastructure/assets/images/pessoa-surpresa2.jpg"
+        type="image/jpeg"
+      />
+      <!-- Imagem para telas médias (entre 601px e 1024px de largura) -->
+      <source
+        media="(min-width: 601px) and (max-width: 1024px)"
+        srcset="../infrastructure/assets/images/pessoa-surpresa3.jpg"
+        type="image/jpeg"
+      />
+      <!-- Imagem para telas grandes (mais de 1024px de largura) -->
+      <img
+        src="../infrastructure/assets/images/pessoa-surpresa1.jpg"
+        alt="Imagem de pessoa surpresa"
+        width="800"
+        height="533"
+      />
+    </picture>
+
+    <h2>Clique e veja</h2>
+    <a href="../infrastructure/pages/top-linguagens.html"
+      >As 10 linguagens mais usadas em 2024</a
+    >
   </body>
 </html>
