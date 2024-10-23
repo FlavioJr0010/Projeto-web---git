@@ -3,29 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Determinando o favicon no projeto -->
     <link
       rel="shortcut icon"
       href="../assets/images/favicon.ico"
       type="image/x-icon"
     />
-    <!-- Aplicação do favicon no projeto-->
     <title>Atividade03</title>
   </head>
   <body>
+    <!-- Define o picture com 3 opções de fotos com cada uma tendo proporções diferentes-->
     <picture>
       <!-- Imagem para telas pequenas (até 600px de largura) -->
+       <!--  Essa imagem tem 400 x 266 pixels -->
       <source
         media="(max-width: 600px)"
         srcset="../infrastructure/assets/images/pessoa-surpresa2.jpg"
         type="image/jpeg"
       />
       <!-- Imagem para telas médias (entre 601px e 1024px de largura) -->
+       <!--  Essa imagem tem 600 x 465 pixels -->
       <source
         media="(min-width: 601px) and (max-width: 1024px)"
         srcset="../infrastructure/assets/images/pessoa-surpresa3.jpg"
         type="image/jpeg"
       />
       <!-- Imagem para telas grandes (mais de 1024px de largura) -->
+       <!--  Essa imagem tem 800 x 533 pixels -->
       <img
         src="../infrastructure/assets/images/pessoa-surpresa1.jpg"
         alt="Imagem de pessoa surpresa"
@@ -33,8 +37,10 @@
         height="533"
       />
     </picture>
-
+    <!--Cabeçalho com padrão h2-->
     <h2>Clique e veja</h2>
+
+    <!--Inserindo um link-->
     <a href="../infrastructure/pages/top-linguagens.html"
       >As 10 linguagens mais usadas em 2024</a
     >
