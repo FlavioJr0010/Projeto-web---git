@@ -1,0 +1,48 @@
+/* Define o fundo da página com a cor azul violeta */
+body {
+    background: blueviolet;
+}
+
+/* Centraliza o texto dos elementos que utilizam a classe "centralizar" */
+.centralizar {
+    text-align: center;
+}
+
+/* Estilização do título h1 */
+h1 {
+    color: white;              /* Define a cor do texto como branco */
+    font-size: 50px;           /* Define o tamanho da fonte para 50 pixels */
+    text-decoration: underline; /* Adiciona um sublinhado ao texto */
+    padding: 20px;             /* Adiciona um espaçamento interno de 20 pixels */
+}
+
+
+/* Estiliza o elemento de áudio */
+audio {
+    /* Define o elemento para ocupar a largura inteira em uma linha própria */
+    display: block;
+    /* Centraliza o elemento horizontalmente */
+    margin: 0 auto;
+}
+
+/* Estiliza o elemento de vídeo (iframe) */
+iframe {
+    /* Define o elemento para ocupar a largura inteira em uma linha própria */
+    display: block;
+    /* Centraliza o elemento horizontalmente */
+    margin: 0 auto;
+}
+
+/* Estilização para links (<a>) */
+a {
+    color: black;                /* Define a cor do texto dos links como preto */
+    text-decoration: none;       /* Remove o sublinhado padrão dos links */
+    border: 10px solid white;    /* Adiciona uma borda branca de 10 pixels ao redor dos links */
+    background-color: white;     /* Define a cor de fundo dos links como branca */
+    font-size: 20px;             /* Define o tamanho da fonte dos links para 20 pixels */
+}
+
+/* Estilização para subtítulos (<h2>) */
+h2 {
+    font-size: 60px;             /* Define o tamanho da fonte dos subtítulos como 60 pixels */
+}
