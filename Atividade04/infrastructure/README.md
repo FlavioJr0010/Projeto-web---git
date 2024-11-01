@@ -2,12 +2,6 @@
 
 Este projeto é uma página web simples que demonstra o uso de HTML, CSS e a integração de mídias (imagens, áudio e vídeo). O projeto possui uma estrutura de diretórios organizada para facilitar a manutenção e a navegação entre as páginas.
 
-## Estrutura do Projeto
-
-A estrutura de pastas do projeto é a seguinte:
-
-Atividade03/ ├── infrastructure/ │ ├── assets/ │ │ ├── images/ │ │ │ ├── favicon.ico │ │ │ ├── pessoa-surpresa1.jpg │ │ │ ├── pessoa-surpresa2.jpg │ │ │ └── pessoa-surpresa3.jpg │ │ ├── css/ │ │ │ └── style.css │ │ └── Audio/ │ │ ├── Meu-voto-é-no-lobao.mp3 │ │ ├── Meu-voto-é-no-lobao.ogg │ │ └── Meu-voto-é-no-lobao.wav │ └── pages/ │ ├── index.html │ └── top-linguagens.html └── README.md
-
 
 ## Funcionalidades
 
