@@ -1,7 +1,14 @@
-/* Define o fundo da página com a cor azul violeta */
+/* Define um estilo de flexbox no body para centralizar o conteúdo vertical e horizontalmente */
 body {
-    background: blueviolet;
-}
+    background: blueviolet;       /* Define a cor de fundo */
+    display: flex;                  /* Habilita o Flexbox para o alinhamento */
+    align-items: center;            /* Alinha o conteúdo ao centro verticalmente */
+    justify-content: center;        /* Alinha o conteúdo ao centro horizontalmente */
+    flex-direction: column;         /* Organiza o conteúdo em coluna */
+    min-height: 100vh;              /* Garante que o conteúdo ocupe a altura da tela */
+    margin: 0;                      /* Remove as margens do body */
+    font-family: Arial, sans-serif; /* Define uma fonte básica */
+  }
 
 /* Centraliza o texto dos elementos que utilizam a classe "centralizar" */
 .centralizar {
@@ -42,7 +49,23 @@ a {
     font-size: 20px;             /* Define o tamanho da fonte dos links para 20 pixels */
 }
 
+a:hover {
+    color: #0056b3;                 /* Muda a cor do link ao passar o mouse */
+    text-decoration: underline;     /* Adiciona um sublinhado ao passar o mouse */
+  }
+
 /* Estilização para subtítulos (<h2>) */
 h2 {
     font-size: 60px;             /* Define o tamanho da fonte dos subtítulos como 60 pixels */
+}
+
+
+/* Estilos para a imagem e o elemento picture */
+picture,
+img {
+  max-width: 100%;                /* Garante que a imagem não ultrapasse a largura da tela */
+  height: auto;                   /* Mantém a proporção original da imagem */
+  display: block;                 /* Centraliza a imagem */
+  margin: 0 auto;                 /* Centraliza a imagem horizontalmente */
+  background: blueviolet;       /* Define uma cor de fundo (blueviolet) ao redor da imagem */
 }
