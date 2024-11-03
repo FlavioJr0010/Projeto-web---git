@@ -10,6 +10,11 @@ body {
     font-family: Arial, sans-serif; /* Define uma fonte básica */
   }
 
+  .fundo {
+    background-image: url("../images/lobão-deputado.jpg"); /*Definindo a imagem de fundo*/
+    background-repeat: round; /*Permite com que as imagens repitam e fiquem simetricamente iguais*/
+  }
+
 /* Centraliza o texto dos elementos que utilizam a classe "centralizar" */
 .centralizar {
     text-align: center;
