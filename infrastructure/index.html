@@ -11,49 +11,98 @@
     />
 
     <!--Determinando a conexão entre o css com o html-->
-    <link 
-    rel="stylesheet" 
-    type="text/css"
-     href="../infrastructure/assents/css/style.css"
-     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../infrastructure/assents/css/style.css"
+    />
 
     <title>Atividade03</title>
-  </head>
-  <body>
-    <!-- Define o picture com 3 opções de fotos com cada uma tendo proporções diferentes-->
-    <picture>
-      <!-- Imagem para telas pequenas (até 600px de largura) -->
-       <!--  Essa imagem tem 400 x 266 pixels -->
-      <source
-        media="(max-width: 600px)"
-        srcset="..//infrastructure/assents/images/pessoa-surpresa2"
-        type="image/jpeg"
-      />
-      <!-- Imagem para telas médias (entre 601px e 1024px de largura) -->
-       <!--  Essa imagem tem 600 x 465 pixels -->
-      <source
-        media="(min-width: 601px) and (max-width: 1024px)"
-        srcset="..//infrastructure/assets/images/pessoa-surpresa3.jpg"
-        type="image/jpeg"
-      />
-      <!-- Imagem para telas grandes (mais de 1024px de largura) -->
-       <!--  Essa imagem tem 800 x 533 pixels -->
-      <img
-        src="..//infrastructure/assents/images/pessoa-surpresa1.jpg"
-        alt="Imagem de pessoa surpresa"
-        width="800"
-        height="533"
-      />
-    </picture>
-    <!--Cabeçalho com padrão h2-->
-    <h2 class="centralizar">Não perca !!!</h2>
 
-    <!--Link que redireciona para o sandbox.html-->
-    <a href="../infrastructure/sandbox.html" >Clique e veja um sandbox de sucesso</a>
-    
-    <div>
-      <h1 class="centralizar">Cores do projeto definida</h1>
-      <img src="../infrastructure/assents/images/Minhas-cores-projeto.jpeg" alt="cores do projeto">
-    </div>
+  </head>
+
+  <body>
+    <!--Inicio do header-->
+    <header>
+      <!--Frase-->
+      <h1>Pagina inicial do projeto</h1>
+
+      <!--incio do nav dentro do header-->
+      <nav>
+        <!--Link que redireciona para o sandbox.html-->
+        <a href="../infrastructure/sandbox.html"
+          >Clique e veja um sandbox de sucesso</a
+        >
+      </nav> <!--Fim do nav-->
+    </header><!--Fim do header-->
+
+    <!--Inicio da main-->
+    <main>
+      <!--Inicio do article-->
+      <article>
+        <!-- Define o picture com 3 opções de fotos com cada uma tendo proporções diferentes-->
+        <div>
+          <picture>
+            <!-- Imagem para telas pequenas (até 600px de largura) -->
+            <!--  Essa imagem tem 400 x 266 pixels -->
+            <source
+              media="(max-width: 600px)"
+              srcset="..//infrastructure/assents/images/pessoa-surpresa2"
+              type="image/jpeg"
+            />
+            <!-- Imagem para telas médias (entre 601px e 1024px de largura) -->
+            <!--  Essa imagem tem 600 x 465 pixels -->
+            <source
+              media="(min-width: 601px) and (max-width: 1024px)"
+              srcset="..//infrastructure/assets/images/pessoa-surpresa3.jpg"
+              type="image/jpeg"
+            />
+            <!-- Imagem para telas grandes (mais de 1024px de largura) -->
+            <!--  Essa imagem tem 800 x 533 pixels -->
+            <img
+              src="..//infrastructure/assents/images/pessoa-surpresa1.jpg"
+              alt="Imagem de pessoa surpresa"
+            />
+          </picture>
+        </div>
+      </article><!--Fim do article-->
+
+      <!--inicio do article-->
+      <article>
+        <h1 class="centralizar">O que será o projeto ?</h1>
+
+        <!--Paragrafo com as informações do projeto-->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
+          nibh vitae nulla pulvinar lobortis. Pellentesque varius posuere erat
+          quis ornare. Nam convallis dolor in justo blandit, a luctus odio
+          varius. Vestibulum sagittis venenatis ex non pulvinar. Morbi aliquet
+          sapien turpis, in suscipit nisi sagittis non. Nam mollis commodo
+          lorem, sed aliquam justo. Sed porttitor ligula sit amet tempor
+          interdum. In id dignissim massa. Ut ac convallis risus. Sed non
+          elementum purus. Aliquam quis sem commodo, fringilla mi ultricies,
+          egestas diam. Proin suscipit semper neque in gravida. In sit amet
+          sapien vitae ligula luctus vulputate.
+        </p>
+
+        <h1 class="centralizar">Cores do projeto definida</h1>
+        <!--div para separar-->
+        <div class="centralizar">
+          <!--Chamada das cores do projeto-->
+          <p class="circle color1"></p>
+          <p class="circle color2"></p>
+          <p class="circle color3"></p>
+          <p class="circle color4"></p>
+          <p class="circle color5"></p>
+          <p class="circle color6"></p>
+        </div>
+      </article>
+    </main>
+
+    <!--Radapé do projeto-->
+    <footer>
+      <h3>Pagina inicial criada pelo aluno Flávio</h3>
+    </footer>
+    <!--Fim do rodapé-->
   </body>
 </html>

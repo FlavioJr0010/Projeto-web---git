@@ -1,76 +1,121 @@
 /* Define um estilo de flexbox no body para centralizar o conteúdo vertical e horizontalmente */
 body {
-    background: blueviolet;       /* Define a cor de fundo */
-    display: flex;                  /* Habilita o Flexbox para o alinhamento */
-    align-items: center;            /* Alinha o conteúdo ao centro verticalmente */
-    justify-content: center;        /* Alinha o conteúdo ao centro horizontalmente */
-    flex-direction: column;         /* Organiza o conteúdo em coluna */
-    min-height: 100vh;              /* Garante que o conteúdo ocupe a altura da tela */
-    margin: 0;                      /* Remove as margens do body */
-    font-family: Arial, sans-serif; /* Define uma fonte básica */
-  }
+  background: blueviolet; /* Define a cor de fundo */
+  display: flex; /* Habilita o Flexbox para o alinhamento */
+  align-items: center; /* Alinha o conteúdo ao centro verticalmente */
+  justify-content: center; /* Alinha o conteúdo ao centro horizontalmente */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  min-height: 100vh; /* Garante que o conteúdo ocupe a altura da tela */
+  margin: 0; /* Remove as margens do body */
+  font-family: Arial, sans-serif; /* Define uma fonte básica */
+}
 
-  .fundo {
-    background-image: url("../images/lobão-deputado.jpg"); /*Definindo a imagem de fundo*/
-    background-repeat: round; /*Permite com que as imagens repitam e fiquem simetricamente iguais*/
-  }
+.fundo {
+  background-image: url("../images/lobão-deputado.jpg"); /*Definindo a imagem de fundo*/
+  background-repeat: round; /*Permite com que as imagens repitam e fiquem simetricamente iguais*/
+}
 
 /* Centraliza o texto dos elementos que utilizam a classe "centralizar" */
 .centralizar {
-    text-align: center;
+  text-align: center;
 }
 
 /* Estilização do título h1 */
 h1 {
-    color: white;              /* Define a cor do texto como branco */
-    font-size: 50px;           /* Define o tamanho da fonte para 50 pixels */
-    text-decoration: underline; /* Adiciona um sublinhado ao texto */
-    padding: 20px;             /* Adiciona um espaçamento interno de 20 pixels */
+  color: white; /* Define a cor do texto como branco */
+  font-size: 50px; /* Define o tamanho da fonte para 50 pixels */
+  text-decoration: underline; /* Adiciona um sublinhado ao texto */
+  padding: 20px; /* Adiciona um espaçamento interno de 20 pixels */
+  text-align: left;
 }
-
 
 /* Estiliza o elemento de áudio */
 audio {
-    /* Define o elemento para ocupar a largura inteira em uma linha própria */
-    display: block;
-    /* Centraliza o elemento horizontalmente */
-    margin: 0 auto;
+  /* Define o elemento para ocupar a largura inteira em uma linha própria */
+  display: block;
+  /* Centraliza o elemento horizontalmente */
+  margin: 0 auto;
 }
 
 /* Estiliza o elemento de vídeo (iframe) */
 iframe {
-    /* Define o elemento para ocupar a largura inteira em uma linha própria */
-    display: block;
-    /* Centraliza o elemento horizontalmente */
-    margin: 0 auto;
+  /* Define o elemento para ocupar a largura inteira em uma linha própria */
+  display: block;
+  /* Centraliza o elemento horizontalmente */
+  margin: 0 auto;
 }
 
 /* Estilização para links (<a>) */
 a {
-    color: black;                /* Define a cor do texto dos links como preto */
-    text-decoration: none;       /* Remove o sublinhado padrão dos links */
-    border: 10px solid white;    /* Adiciona uma borda branca de 10 pixels ao redor dos links */
-    background-color: white;     /* Define a cor de fundo dos links como branca */
-    font-size: 20px;             /* Define o tamanho da fonte dos links para 20 pixels */
+  color: black; /* Define a cor do texto dos links como preto */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  border: 10px solid white; /* Adiciona uma borda branca de 10 pixels ao redor dos links */
+  background-color: white; /* Define a cor de fundo dos links como branca */
+  font-size: 20px; /* Define o tamanho da fonte dos links para 20 pixels */
 }
 
 a:hover {
-    color: #0056b3;                 /* Muda a cor do link ao passar o mouse */
-    text-decoration: underline;     /* Adiciona um sublinhado ao passar o mouse */
-  }
+  color: #0056b3; /* Muda a cor do link ao passar o mouse */
+  text-decoration: dashed; /* Adiciona um dashed ao passar o mouse */
+}
 
 /* Estilização para subtítulos (<h2>) */
 h2 {
-    font-size: 60px;             /* Define o tamanho da fonte dos subtítulos como 60 pixels */
+  font-size: 60px; /* Define o tamanho da fonte dos subtítulos como 60 pixels */
 }
-
 
 /* Estilos para a imagem e o elemento picture */
 picture,
 img {
-  max-width: 100%;                /* Garante que a imagem não ultrapasse a largura da tela */
-  height: auto;                   /* Mantém a proporção original da imagem */
-  display: block;                 /* Centraliza a imagem */
-  margin: 0 auto;                 /* Centraliza a imagem horizontalmente */
-  background: blueviolet;       /* Define uma cor de fundo (blueviolet) ao redor da imagem */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  height: auto; /* Mantém a proporção original da imagem */
+  display: block; /* Centraliza a imagem */
+  margin: 50px auto; /* Centraliza a imagem horizontalmente */
 }
+
+nav a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #800080; /* Define a cor do texto para roxo */
+  background-color: white; /* Define a cor de fundo como branco */
+  padding: 10px; /* Adiciona um espaçamento interno de 10px */
+  font-weight: bold; /* Define o texto como negrito */
+  display: block; /* Faz o link ocupar toda a largura do contêiner */
+  text-align: center; /* Centraliza o texto dentro do link */
+  font-size: 200%; /* Define o tamanho da fonte para 200% do tamanho padrão */
+}
+
+.circle {
+  width: 100px;               /* Define a largura do círculo como 100px */
+  height: 100px;              /* Define a altura do círculo como 100px */
+  border-radius: 50%;         /* Aplica um arredondamento de 50% para tornar o elemento circular */
+  display: inline-block;      /* Permite que os círculos fiquem alinhados em uma linha */
+  margin: 20px;               /* Define uma margem ao redor de cada círculo */
+}
+
+
+/* Cores específicas dos círculos */
+.color1 {
+  background-color: #7869f5;
+} /* RGB: 120, 105, 245 */
+.color2 {
+  background-color: #415cf2;
+} /* RGB: 65, 92, 242 */
+.color3 {
+  background-color: #4188f2;
+} /* RGB: 65, 136, 242 */
+.color4 {
+  background-color: #40b5f5;
+} /* RGB: 64, 181, 245 */
+.color5 {
+  background-color: #97ecf5;
+} /* RGB: 151, 236, 245 */
+.color6 {
+  background-color: #edf4f5;
+} /* RGB: 237, 244, 245 */
+
+p {
+  color: white;              /* Define a cor do texto como branco */
+  font-size: 25px;           /* Define o tamanho da fonte para 25 pixels */
+  text-align: center;        /* Centraliza o texto dentro do parágrafo */
+}
+
