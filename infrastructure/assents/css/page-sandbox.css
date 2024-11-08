@@ -1,0 +1,54 @@
+
+.fundo {
+    background-image: url("../images/lobão-deputado.jpg"); /*Definindo a imagem de fundo*/
+    background-repeat: round; /*Permite com que as imagens repitam e fiquem simetricamente iguais*/
+  }
+
+  div.video {
+    position: relative;                /* Define o contêiner como posição relativa, permitindo que elementos filhos posicionados de forma absoluta se baseiem nele */
+    height: 0px;                       /* Define a altura como 0px, provavelmente para criar uma proporção específica com o `padding-bottom` */
+    margin-left: -20px;                /* Move o contêiner 20px para a esquerda */
+    margin-right: -20px;               /* Move o contêiner 20px para a direita */
+    margin-bottom: 15px;               /* Define uma margem inferior de 15px */
+    padding-bottom: 59%;               /* Define o `padding-bottom` como 59% da largura do contêiner, o que cria uma proporção de altura para o vídeo */
+  }
+
+  div.video > iframe {
+    position: absolute;   /* Posiciona o `iframe` de forma absoluta dentro do contêiner `.video` */
+    top: 5%;              /* Define o posicionamento superior como 5% do contêiner pai */
+    left: 5%;             /* Define o posicionamento à esquerda como 5% do contêiner pai */
+    width: 90%;           /* Define a largura do `iframe` como 90% do contêiner pai */
+    height: 90%;          /* Define a altura do `iframe` como 90% do contêiner pai */
+  }
+  
+  
+
+  /* Estiliza o elemento de áudio */
+audio {
+    /* Define o elemento para ocupar a largura inteira em uma linha própria */
+    display: block;
+    /* Centraliza o elemento horizontalmente */
+    margin: 0 auto;
+  }
+  
+  /* Estiliza o elemento de vídeo (iframe) */
+  iframe {
+    /* Define o elemento para ocupar a largura inteira em uma linha própria */
+    display: block;
+    /* Centraliza o elemento horizontalmente */
+    margin: 0 auto;
+  }
+
+  /* Estilização do título h1 */
+h1 {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 50px; /* Define o tamanho da fonte para 50 pixels */
+    text-decoration: underline; /* Adiciona um sublinhado ao texto */
+    padding: 20px; /* Adiciona um espaçamento interno de 20 pixels */
+    text-align: left;
+  }
+  
+/* Estilização para subtítulos (<h2>) */
+h2 {
+    font-size: 60px; /* Define o tamanho da fonte dos subtítulos como 60 pixels */
+  }

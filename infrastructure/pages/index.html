@@ -17,26 +17,47 @@
       href="../assents/css/style.css"
     />
 
+    <!--Determinando a conexão entre do css específico para o index-->
+    <link rel="stylesheet" 
+    type="text/css" 
+    href="../assents/css/page-index.css"
+    />
+
     <title>Atividade03</title>
 
   </head>
 
-  <body>
-    <!--Inicio do header-->
-    <header>
-      <!--Frase-->
-      <h1>Pagina inicial do projeto</h1>
+  <body >
 
-      <!--incio do nav dentro do header-->
-      <nav>
-        <!--Link que redireciona para o sandbox.html-->
-        <a href="../pages/sandbox.html"
-          >Clique e veja um sandbox de sucesso</a
-        >
-      </nav> <!--Fim do nav-->
-    </header><!--Fim do header-->
+    <div id="interface" class="">
+      <header id="cabecalho">
+          <hgroup>
+              <h1>Pagina Inicial</h1>
+              <h2>Bem vindo a uma pagina de sucesso potência</h2>
+          </hgroup>
 
-    <!--Inicio da main-->
+
+      </header>
+  </div>
+
+  <div>
+    <!--incio do nav dentro do header-->
+    <nav id="menu">
+      <h1>Menu principal</h1>
+      <!--Link que redireciona para o sandbox.html-->
+      <ul>
+        <li><a href="index.html">Página principal</a></li>
+        <li><a href="../pages/sandbox.html">Sandbox</a></li>
+        <li><a href="index.html">Sobre nós</a></li>
+        <li><a href="index.html">Contato</a></li>
+      </ul>
+    </nav> <!--Fim do nav-->
+</div>
+  
+
+
+    <div id="definicoes">
+      <!--Inicio da main-->
     <main>
       <!--Inicio do article-->
       <article>
@@ -69,7 +90,7 @@
 
       <!--inicio do article-->
       <article>
-        <h1 class="centralizar">O que será o projeto ?</h1>
+        <h1 class="configurar">O que será o projeto ?</h1>
 
         <!--Paragrafo com as informações do projeto-->
         <p>
@@ -85,7 +106,7 @@
           sapien vitae ligula luctus vulputate.
         </p>
 
-        <h1 class="centralizar">Cores do projeto definida</h1>
+        <h1 class="configurar">Cores do projeto definida</h1>
         <!--div para separar-->
         <div class="centralizar">
           <!--Chamada das cores do projeto-->
@@ -101,8 +122,9 @@
 
     <!--Radapé do projeto-->
     <footer>
-      <h3>Pagina inicial criada pelo aluno Flávio</h3>
+      <p>Pagina inicial criada pelo aluno Flávio</p>
     </footer>
     <!--Fim do rodapé-->
+    </div>
   </body>
 </html>
