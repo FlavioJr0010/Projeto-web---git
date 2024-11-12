@@ -1,0 +1,68 @@
+/* Configuração do corpo da página para centralizar o formulário com uma imagem de fundo */
+body {
+    background-image: url("../images/login-walpaper.jpg"); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da viewport */
+    margin: 0; /* Remove margens do corpo para um alinhamento perfeito */
+}
+
+/* Estilização do contêiner do formulário de cadastro */
+.register-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    padding: 20px; /* Espaço interno ao redor do conteúdo do formulário */
+    border-radius: 10px; /* Bordas arredondadas para um visual suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor para dar profundidade */
+    width: 300px; /* Largura fixa do contêiner */
+    text-align: center; /* Centraliza o texto no contêiner */
+}
+
+/* Estilização do título */
+.register-container h1 {
+    font-family: Arial, sans-serif; /* Fonte do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilização dos campos de entrada de texto e senha */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container input[type="number"] {
+    width: 100%; /* Largura completa do contêiner */
+    padding: 10px; /* Espaço interno no campo */
+    margin: 10px 0; /* Espaço acima e abaixo de cada campo */
+    border: 1px solid #ccc; /* Borda leve ao redor do campo */
+    border-radius: 5px; /* Bordas arredondadas para suavidade */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    font-size: 14px; /* Tamanho da fonte no campo */
+}
+
+/* Estilização para o grupo de opções de sexo */
+.radio-group {
+    display: flex;
+    justify-content: space-around; /* Espaço entre as opções */
+    margin: 10px 0;
+}
+
+/* Estilização para o botão de cadastro */
+.register-container input.cadastrar {
+    background-color: #2196F3; /* Cor de fundo azul */
+    width: 100%; /* Largura completa do contêiner */
+    padding: 10px; /* Espaço interno do botão */
+    margin-top: 10px; /* Espaço acima do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas para os botões */
+    font-size: 14px; /* Tamanho da fonte do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    color: #fff; /* Cor do texto no botão */
+}
+
+/* Efeito de hover para o botão de cadastro */
+.register-container input.cadastrar:hover {
+    opacity: 0.8; /* Torna o botão ligeiramente transparente ao passar o mouse */
+}

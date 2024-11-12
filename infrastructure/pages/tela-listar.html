@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Metadados básicos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela listar</title>
+    <!-- Determinando o favicon no projeto -->
+    <link
+      rel="shortcut icon"
+      href="../assents/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="../assents/css/tela-listar.css" />
+  </head>
+  <body>
+    <!-- Container principal da página -->
+    <main class="container">
+      <!-- Seção principal da tela -->
+      <section class="main-content">
+        <!-- Cabeçalho da seção, contendo barra de busca e botões -->
+        <header class="header">
+          <!-- Campo de texto para busca -->
+          <input type="text" placeholder="Procurar..." class="search-bar" />
+
+          <!-- Botão para adicionar um novo usuário -->
+          <button class="add-user-btn">+</button>
+
+          <!-- Botão para voltar à página inicial -->
+          <button class="home-btn">🏠</button>
+        </header>
+
+        <!-- Artigo contendo a tabela de dados -->
+        <article>
+          <table>
+            <!-- Cabeçalho da tabela -->
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <!-- Coluna de nome -->
+                <th>Email</th>
+                <!-- Coluna de quantidade -->
+                <th>Idade</th>
+                <!-- Coluna de descrição -->
+                <th>Sexo</th>
+                <!-- Coluna de fornecedor -->
+                <th>Remover</th>
+                <!-- Coluna de botão para remover -->
+                <th>Editar</th>
+                <!-- Coluna de botão para editar -->
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Linha de exemplo de dados -->
+              <tr>
+                <td>Edson Gomes</td>
+                <!-- Nome do item -->
+                <td>edson.gomes@teste.com</td>
+                <!-- Quantidade do item -->
+                <td>72</td>
+                <!-- Descrição do item -->
+                <td>Masculino</td>
+                <!-- Fornecedor do item -->
+                <!-- Botão para remover o item -->
+                <td><button class="remove-btn">🗑️</button></td>
+                <!-- Botão para editar o item -->
+                <td><button class="edit-btn">✏️</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

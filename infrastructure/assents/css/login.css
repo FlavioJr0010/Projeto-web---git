@@ -1,0 +1,73 @@
+/* Configuração do corpo da página para usar uma imagem de fundo */
+body {
+    background-image: url("../images/login-walpaper.jpg"); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da viewport */
+    margin: 0; /* Remove margens do corpo para um alinhamento perfeito */
+}
+
+/* Estilização do contêiner do formulário de login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade para ver o fundo */
+    padding: 20px; /* Espaço interno ao redor do conteúdo do formulário */
+    border-radius: 10px; /* Bordas arredondadas para um visual suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor para dar profundidade */
+    width: 300px; /* Largura fixa do contêiner */
+    text-align: center; /* Centraliza o texto no contêiner */
+}
+
+/* Estilização do título do formulário */
+.login-container h1 {
+    font-family: Arial, sans-serif; /* Fonte do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilização dos campos de entrada de texto e senha */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%; /* Largura completa do contêiner */
+    padding: 10px; /* Espaço interno no campo */
+    margin: 10px 0; /* Espaço acima e abaixo de cada campo */
+    border: 1px solid #ccc; /* Borda leve ao redor do campo */
+    border-radius: 5px; /* Bordas arredondadas para suavidade */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+    font-size: 14px; /* Tamanho da fonte no campo */
+}
+
+/* Estilização específica para o botão Entrar (agora como input) */
+.login-container input.entrar {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Estilização específica para o botão Cadastrar (agora como input) */
+.login-container input.cadastrar {
+    background-color: #2196F3; /* Cor de fundo azul */
+    width: 48%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Efeito de hover para ambos os botões */
+.login-container input.entrar:hover,
+.login-container input.cadastrar:hover {
+    opacity: 0.8; /* Torna o botão ligeiramente transparente ao passar o mouse */
+}

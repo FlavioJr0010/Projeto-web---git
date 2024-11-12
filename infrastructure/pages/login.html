@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Determinando o favicon no projeto -->
+    <link
+      rel="shortcut icon"
+      href="../assents/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../assents/css/login.css" />
+  </head>
+  <body>
+    <!--Inicio do main-->
+    <main>
+      <!--Inicio do article-->
+      <article>
+        <div>
+          <!--Incio do form-->
+          <form action="/enviar" method="post">
+            <!-- Contêiner principal do formulário de login -->
+            <div class="login-container">
+              <!-- Título do formulário -->
+              <h1>Login</h1>
+
+              <!-- Campo de entrada para o email do usuário -->
+              <label for="email">Digite o seu email:</label>
+              <input type="text" id="email" placeholder="Digite o seu email" />
+
+              <!-- Campo de entrada para a senha do usuário -->
+              <label for="senha">Digite a sua senha:</label>
+              <input
+                type="password"
+                id="senha"
+                placeholder="Digite a sua senha"
+              />
+
+              <div>
+                <!-- Botão Entrar como input do tipo submit -->
+                <input type="submit" class="entrar" value="Entrar" />
+
+                <!-- Botão Cadastrar como input do tipo button -->
+                <input type="button" class="cadastrar" value="Cadastrar" />
+              </div>
+            </div>
+          </form>
+          <!--Fim do form-->
+        </div>
+      </article>
+      <!--Fim do article-->
+    </main>
+    <!--Fim do main-->
+  </body>
+</html>

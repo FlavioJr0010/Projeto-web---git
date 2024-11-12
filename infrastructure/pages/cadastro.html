@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+
+    <!-- Determinando o favicon no projeto -->
+    <link
+      rel="shortcut icon"
+      href="../assents/images/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--Link do css do projeto-->
+    <link rel="stylesheet" type="text/css" href="../assents/css/cadastro.css" />
+  </head>
+  <body>
+    <!--Inicio da main-->
+    <main>
+      <!--Inicio do article-->
+      <article>
+        <div class="register-container">
+          <h1>Cadastro</h1>
+
+          <!-- Campo de entrada para o nome do usuário -->
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            required
+            placeholder="Digite o seu nome"
+          />
+
+          <!-- Campo de entrada para o email do usuário -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Digite o seu email"
+          />
+
+          <!-- Campo de entrada para a senha do usuário -->
+          <label for="senha">Senha:</label>
+          <input
+            type="password"
+            id="senha"
+            required
+            pattern=".{8,}"
+            title="A senha deve ter pelo menos 8 caracteres"
+            placeholder="Digite a sua senha"
+          />
+
+          <!-- Campo de entrada para confirmar a senha do usuário -->
+          <label for="confirmar-senha">Confirmar Senha:</label>
+          <input
+            type="password"
+            id="confirmar-senha"
+            required
+            pattern=".{8,}"
+            title="A senha deve ter pelo menos 8 caracteres"
+            placeholder="Confirme a sua senha"
+          />
+
+          <!-- Campo de entrada para a idade do usuário -->
+          <label for="idade">Idade:</label>
+          <input
+            type="number"
+            id="idade"
+            required
+            placeholder="Digite a sua idade"
+            min="0"
+          />
+
+          <!-- Seleção de sexo do usuário -->
+          <label>Sexo:</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="sexo" value="masculino" />
+              Masculino</label
+            >
+            <label
+              ><input type="radio" name="sexo" value="feminino" />
+              Feminino</label
+            >
+          </div>
+
+          <!-- Botão de cadastrar -->
+          <input type="submit" class="cadastrar" value="Cadastrar" />
+        </div>
+      </article>
+      <!--Fim do article-->
+    </main>
+    <!--Fim da main-->
+  </body>
+</html>
