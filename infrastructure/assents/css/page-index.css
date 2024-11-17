@@ -1,71 +1,40 @@
-.circle {
-    width: 100px;               /* Define a largura do círculo como 100px */
-    height: 100px;              /* Define a altura do círculo como 100px */
-    border-radius: 50%;         /* Aplica um arredondamento de 50% para tornar o elemento circular */
-    display: inline-block;      /* Permite que os círculos fiquem alinhados em uma linha */
-    margin: 20px;               /* Define uma margem ao redor de cada círculo */
-  }
-  
-  /* Cores específicas dos círculos */
-  .color1 {
-    background-color: #7869f5;
-  } /* RGB: 120, 105, 245 */
-  .color2 {
-    background-color: #415cf2;
-  } /* RGB: 65, 92, 242 */
-  .color3 {
-    background-color: #4188f2;
-  } /* RGB: 65, 136, 242 */
-  .color4 {
-    background-color: #40b5f5;
-  } /* RGB: 64, 181, 245 */
-  .color5 {
-    background-color: #97ecf5;
-  } /* RGB: 151, 236, 245 */
-  .color6 {
-    background-color: #edf4f5;
-  } /* RGB: 237, 244, 245 */
-  
-  p {
-    color: white;              /* Define a cor do texto como branco */
-    font-size: 25px;           /* Define o tamanho da fonte para 25 pixels */
-    text-align: center;        /* Centraliza o texto dentro do parágrafo */
-  }
-
-
-  /* Estilos para a imagem e o elemento picture */
-picture,
-img {
-  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
-  height: auto; /* Mantém a proporção original da imagem */
-  display: block; /* Centraliza a imagem */
-  margin: 70px auto; /* Centraliza a imagem horizontalmente */
+.container {
+  display: flex; /*Permite que os itens fiquem flexiveis */
+  justify-content: center; /*Deixa os itens centralizados*/
 }
 
-/* Estilização para links (<a>) */
-a {
-  color: black; /* Define a cor do texto dos links como preto */
-  text-decoration: none; /* Remove o sublinhado padrão dos links */
-  /*border: 10px solid white; /* Adiciona uma borda branca de 10 pixels ao redor dos links */
-  /*background-color: white; /* Define a cor de fundo dos links como branca */
-  font-size: 20px; /* Define o tamanho da fonte dos links para 20 pixels */
+/* Cores específicas dos círculos */
+.color1 {
+  background-color: #7869f5;
+} /* RGB: 120, 105, 245 */
+.color2 {
+  background-color: #415cf2;
+} /* RGB: 65, 92, 242 */
+.color3 {
+  background-color: #4188f2;
+} /* RGB: 65, 136, 242 */
+.color4 {
+  background-color: #40b5f5;
+} /* RGB: 64, 181, 245 */
+.color5 {
+  background-color: #97ecf5;
+} /* RGB: 151, 236, 245 */
+.color6 {
+  background-color: #edf4f5;
+} /* RGB: 237, 244, 245 */
+
+a:hover {
+  color: #fa4700; /* Muda a cor do link ao passar o mouse */
+  text-decoration: dashed; /* Adiciona um dashed ao passar o mouse */
 }
-  
-  a:hover {
-    color: #fa4700; /* Muda a cor do link ao passar o mouse */
-    text-decoration: dashed; /* Adiciona um dashed ao passar o mouse */
-  }
 
-
-
-  div#interface {
-    width: 90%; /* Define a largura como 90% da tela */
-    max-width: 900px; /* Define um limite máximo para a largura */
-    background-color: #ffffff; /* Cor de fundo branca */
-    margin: 20px 0px; /* Margem superior de 20px, e margem lateral de 0px */
-    padding: 10px; /* Margens internas */
+div#interface {
+  width: 90%; /* Define a largura como 90% da tela */
+  max-width: 900px; /* Define um limite máximo para a largura */
+  background-color: #ffffff; /* Cor de fundo branca */
+  margin: 20px 0px; /* Margem superior de 20px, e margem lateral de 0px */
+  padding: 10px; /* Margens internas */
 }
-
 
 /* Formatação do Menu */
 nav#menu {
@@ -97,23 +66,124 @@ nav#menu h1 {
   display: none; /* Esconde o h1 */
 }
 
+/*Media para telas pequenas*/
+@media (max-width: 600px) {
+  .circle {
+    width: 40px; /* Define a largura do círculo como 40px */
+    height: 40px; /* Define a altura do círculo como 40px */
+    border-radius: 50%; /* Aplica um arredondamento de 50% para tornar o elemento circular */
+    display: inline-block; /* Permite que os círculos fiquem alinhados em uma linha */
+    margin: 10px; /* Define uma margem ao redor de cada círculo */
+  }
 
+  p {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 15px; /* Define o tamanho da fonte para 25 pixels */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+  }
 
-header#cabecalho h1 {
-  font-family: Arial, sans-serif; /* Define a fonte usada no texto como Arial, com alternativa sans-serif */
-  font-size: 50px; /* Define o tamanho da fonte como 50 pixels */
-  color: black; /* Define a cor do texto como preto */
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Cria uma sombra com 1px de deslocamento horizontal e vertical, e 1px de difusão; a cor da sombra é preta com 60% de opacidade */
-  padding: 0px; /* Remove qualquer espaçamento interno (padding) ao redor do texto */
-  margin-bottom: 0px; /* Remove qualquer margem inferior, evitando espaço extra abaixo do elemento */
+  /* Estilização para links (<a>) */
+  a {
+    color: black; /* Define a cor do texto dos links como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    /*border: 10px solid white; /* Adiciona uma borda branca de 10 pixels ao redor dos links */
+    /*background-color: white; /* Define a cor de fundo dos links como branca */
+    font-size: 12px; /* Define o tamanho da fonte dos links para 20 pixels */
+  }
+
+  /* Estilos para a imagem e o elemento picture */
+  picture,
+  img {
+    max-width: 95%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Centraliza a imagem */
+    margin: 70px auto; /* Centraliza a imagem horizontalmente */
+  }
 }
 
+/*Configurações para telas médias*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .circle {
+    width: 60px; /* Define a largura do círculo como 70px */
+    height: 60px; /* Define a altura do círculo como 70px */
+    border-radius: 50%; /* Aplica um arredondamento de 50% para tornar o elemento circular */
+    display: inline-block; /* Permite que os círculos fiquem alinhados em uma linha */
+    margin: 15px; /* Define uma margem ao redor de cada círculo */
+  }
 
-header#cabecalho h2 {
-  font-family: Arial, sans-serif; /* Define a família da fonte, com Arial como primeira opção e sans-serif como alternativa */
-  color: #000000; /* Define a cor do texto como preto (código hexadecimal #000000) */
-  font-size: 25pt; /* Define o tamanho do texto como 25 pontos (pt), uma unidade de medida usada principalmente para tamanhos de fonte */
-  padding: 0px; /* Remove qualquer espaçamento interno (padding) ao redor do elemento */
-  margin-top: 0px; /* Remove qualquer margem superior, alinhando o h2 diretamente ao elemento acima */
+  p {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 20px; /* Define o tamanho da fonte para 25 pixels */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+  }
+
+  /* Estilização para links (<a>) */
+  a {
+    color: black; /* Define a cor do texto dos links como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    /*border: 10px solid white; /* Adiciona uma borda branca de 10 pixels ao redor dos links */
+    /*background-color: white; /* Define a cor de fundo dos links como branca */
+    font-size: 15px; /* Define o tamanho da fonte dos links para 20 pixels */
+  }
+
+  /* Estilos para a imagem e o elemento picture */
+  picture,
+  img {
+    max-width: 95%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Centraliza a imagem */
+    margin: 70px auto; /* Centraliza a imagem horizontalmente */
+  }
 }
 
+/*Configurações para telas grandes*/
+@media (min-width: 1025px) {
+  .circle {
+    width: 100px; /* Define a largura do círculo como 100px */
+    height: 100px; /* Define a altura do círculo como 100px */
+    border-radius: 50%; /* Aplica um arredondamento de 50% para tornar o elemento circular */
+    display: inline-block; /* Permite que os círculos fiquem alinhados em uma linha */
+    margin: 20px; /* Define uma margem ao redor de cada círculo */
+  }
+
+  p {
+    color: white; /* Define a cor do texto como branco */
+    font-size: 25px; /* Define o tamanho da fonte para 25 pixels */
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+  }
+
+  /* Estilização para links (<a>) */
+  a {
+    color: black; /* Define a cor do texto dos links como preto */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    /*border: 10px solid white; /* Adiciona uma borda branca de 10 pixels ao redor dos links */
+    /*background-color: white; /* Define a cor de fundo dos links como branca */
+    font-size: 20px; /* Define o tamanho da fonte dos links para 20 pixels */
+  }
+
+  /* Estilos para a imagem e o elemento picture */
+  picture,
+  img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Centraliza a imagem */
+    margin: 70px auto; /* Centraliza a imagem horizontalmente */
+  }
+
+  header#cabecalho h1 {
+    font-family: Arial, sans-serif; /* Define a fonte usada no texto como Arial, com alternativa sans-serif */
+    font-size: 40px; /* Define o tamanho da fonte como 50 pixels */
+    color: black; /* Define a cor do texto como preto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Cria uma sombra com 1px de deslocamento horizontal e vertical, e 1px de difusão; a cor da sombra é preta com 60% de opacidade */
+    padding: 0px; /* Remove qualquer espaçamento interno (padding) ao redor do texto */
+    margin-bottom: 0px; /* Remove qualquer margem inferior, evitando espaço extra abaixo do elemento */
+  }
+  
+  header#cabecalho h2 {
+    font-family: Arial, sans-serif; /* Define a família da fonte, com Arial como primeira opção e sans-serif como alternativa */
+    color: #000000; /* Define a cor do texto como preto (código hexadecimal #000000) */
+    font-size: 20pt; /* Define o tamanho do texto como 25 pontos (pt), uma unidade de medida usada principalmente para tamanhos de fonte */
+    padding: 0px; /* Remove qualquer espaçamento interno (padding) ao redor do elemento */
+    margin-top: 0px; /* Remove qualquer margem superior, alinhando o h2 diretamente ao elemento acima */
+  }
+}

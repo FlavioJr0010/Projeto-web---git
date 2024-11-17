@@ -6,21 +6,28 @@ body {
     display: flex; /* Usa flexbox para centralizar o conteúdo */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
-    height: 100vh; /* Define a altura como 100% da viewport */
-    margin: 0; /* Remove margens do corpo para um alinhamento perfeito */
+    min-height: 100vh; /* Altura mínima como 100% da viewport */
+    margin: 0; /* Remove margens do corpo */
+    padding: 0; /* Remove qualquer padding extra */
+    overflow: hidden; /* Evita barra de rolagem inesperada */
 }
 
-/* Estilização do contêiner do formulário de cadastro */
+/* Estilização do contêiner de login */
+.login-container,
 .register-container {
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
     padding: 20px; /* Espaço interno ao redor do conteúdo do formulário */
     border-radius: 10px; /* Bordas arredondadas para um visual suave */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor para dar profundidade */
-    width: 300px; /* Largura fixa do contêiner */
-    text-align: center; /* Centraliza o texto no contêiner */
+    width: 100%; /* Largura do contêiner */
+    max-width: 400px; /* Largura máxima do contêiner */
+    text-align: center; /* Centraliza o texto */
+    margin: auto; /* Adiciona margem automática para centralizar caso o flexbox falhe */
+    position: relative; /* Garante que o contêiner respeite a centralização */
 }
 
 /* Estilização do título */
+.login-container h1,
 .register-container h1 {
     font-family: Arial, sans-serif; /* Fonte do título */
     font-size: 24px; /* Tamanho da fonte do título */
@@ -28,7 +35,9 @@ body {
     margin-bottom: 20px; /* Espaço abaixo do título */
 }
 
-/* Estilização dos campos de entrada de texto e senha */
+/* Estilização dos campos de entrada de texto, email, senha e número */
+.login-container input[type="text"],
+.login-container input[type="password"],
 .register-container input[type="text"],
 .register-container input[type="email"],
 .register-container input[type="password"],
@@ -42,14 +51,9 @@ body {
     font-size: 14px; /* Tamanho da fonte no campo */
 }
 
-/* Estilização para o grupo de opções de sexo */
-.radio-group {
-    display: flex;
-    justify-content: space-around; /* Espaço entre as opções */
-    margin: 10px 0;
-}
-
-/* Estilização para o botão de cadastro */
+/* Estilização específica para os botões */
+.login-container input.entrar,
+.login-container input.cadastrar,
 .register-container input.cadastrar {
     background-color: #2196F3; /* Cor de fundo azul */
     width: 100%; /* Largura completa do contêiner */
@@ -62,7 +66,43 @@ body {
     color: #fff; /* Cor do texto no botão */
 }
 
-/* Efeito de hover para o botão de cadastro */
+/* Efeito de hover para os botões */
+.login-container input.entrar:hover,
+.login-container input.cadastrar:hover,
 .register-container input.cadastrar:hover {
     opacity: 0.8; /* Torna o botão ligeiramente transparente ao passar o mouse */
+}
+
+/* Estilização para o grupo de opções de sexo (no cadastro) */
+.register-container .radio-group {
+    display: flex;
+    justify-content: space-around; /* Espaço entre as opções */
+    margin: 10px 0;
+}
+
+/* Responsividade - Ajustes para diferentes tamanhos de tela */
+
+/* Para telas pequenas (ex: dispositivos móveis) */
+@media screen and (max-width: 480px) {
+    .login-container,
+    .register-container {
+        width: 70%; /* Ajusta a largura para 90% da tela */
+        max-width: none; /* Remove a largura máxima */
+    }
+}
+
+/* Para telas médias (ex: tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .login-container,
+    .register-container {
+        width: 80%; /* Ajusta a largura para 80% da tela */
+    }
+}
+
+/* Para telas grandes (ex: desktops) */
+@media screen and (min-width: 769px) {
+    .login-container,
+    .register-container {
+        width: 80%; /* Ajusta a largura para 50% da tela */
+    }
 }
