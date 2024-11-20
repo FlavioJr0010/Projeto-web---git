@@ -1,116 +1,239 @@
 /* Resetando margens e padding de todos os elementos para garantir consistência */
 * {
-    margin: 0; /* Remove todas as margens padrão */
-    padding: 0; /* Remove todos os paddings padrão */
-    box-sizing: border-box; /* Inclui padding e bordas no tamanho total dos elementos */
+  margin: 0; /* Remove todas as margens padrão */
+  padding: 0; /* Remove todos os paddings padrão */
+  box-sizing: border-box; /* Inclui padding e bordas no tamanho total dos elementos */
 }
 
 /* Estilos gerais para o corpo e a página */
-body, html {
-    font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
-    height: 100%; /* Define a altura como 100% da tela para garantir que o conteúdo ocupe a altura total */
+body,
+html {
+  font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+  height: 100%; /* Define a altura como 100% da tela para garantir que o conteúdo ocupe a altura total */
 }
 
 /* Container principal que engloba todo o conteúdo da página */
 .container {
-    display: flex; /* Define o layout como flexível para organizar os elementos internamente */
-    height: 100vh; /* Define a altura do container para ocupar toda a altura da tela */
+  display: flex; /* Define o layout como flexível para organizar os elementos internamente */
+  height: 100vh; /* Define a altura do container para ocupar toda a altura da tela */
 }
 
 /* Área principal onde o conteúdo é exibido */
 .main-content {
-    flex: 1; /* Expande a área principal para ocupar todo o espaço disponível */
-    padding: 20px; /* Define um espaçamento interno de 20px para dar margem ao conteúdo */
-    background-color: #f3f4f6; /* Cor de fundo suave para a área principal */
+  flex: 1; /* Expande a área principal para ocupar todo o espaço disponível */
+  padding: 20px; /* Define um espaçamento interno de 20px para dar margem ao conteúdo */
+  background-color: #f3f4f6; /* Cor de fundo suave para a área principal */
 }
 
 /* Cabeçalho da área principal com barra de pesquisa e botões */
 .header {
-    display: flex; /* Organiza os elementos do cabeçalho em linha */
-    justify-content: space-between; /* Distribui os itens do cabeçalho com espaço igual entre eles */
-    align-items: center; /* Centraliza verticalmente os itens no cabeçalho */
-    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px abaixo do cabeçalho */
+  display: flex; /* Organiza os elementos do cabeçalho em linha */
+  justify-content: space-between; /* Distribui os itens do cabeçalho com espaço igual entre eles */
+  align-items: center; /* Centraliza verticalmente os itens no cabeçalho */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20px abaixo do cabeçalho */
 }
 
 /* Estilos para a barra de pesquisa */
 .search-bar {
-    padding: 10px; /* Define um padding de 10px para tornar a barra mais espaçosa */
-    border-radius: 20px; /* Bordas arredondadas para estilo suave */
-    border: 1px solid #ccc; /* Define uma borda leve em torno da barra de pesquisa */
-    width: 60%; /* Largura de 60% para tornar a barra de pesquisa proeminente */
+  padding: 10px; /* Define um padding de 10px para tornar a barra mais espaçosa */
+  border-radius: 20px; /* Bordas arredondadas para estilo suave */
+  border: 1px solid #ccc; /* Define uma borda leve em torno da barra de pesquisa */
+  width: 60%; /* Largura de 60% para tornar a barra de pesquisa proeminente */
 }
 
 /* Botão para adicionar um novo usuário */
 .add-user-btn {
-    background-color: #2196F3; /* Cor de fundo azul para o botão */
-    color: white; /* Cor do texto em branco para contraste */
-    border: none; /* Remove borda padrão */
-    padding: 10px 15px; /* Espaçamento interno para aumentar a área de clique */
-    font-size: 20px; /* Aumenta o tamanho da fonte para destaque */
-    border-radius: 50%; /* Deixa o botão redondo */
-    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  background-color: #2196f3; /* Cor de fundo azul para o botão */
+  color: white; /* Cor do texto em branco para contraste */
+  border: none; /* Remove borda padrão */
+  padding: 10px 15px; /* Espaçamento interno para aumentar a área de clique */
+  font-size: 20px; /* Aumenta o tamanho da fonte para destaque */
+  border-radius: 50%; /* Deixa o botão redondo */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
 }
 
 /* Efeito de opacidade ao passar o mouse no botão de adicionar usuário */
 .add-user-btn:hover {
-    opacity: 0.8; /* Reduz ligeiramente a opacidade ao passar o mouse, criando um efeito visual */
+  opacity: 0.8; /* Reduz ligeiramente a opacidade ao passar o mouse, criando um efeito visual */
 }
 
 /* Botão da home (ícone de casa) */
 .home-btn {
-    background-color: transparent; /* Remove qualquer cor de fundo */
-    border: none; /* Remove bordas para manter apenas o ícone */
-    font-size: 24px; /* Aumenta o tamanho da fonte para destacar o ícone */
-    cursor: pointer; /* Define o cursor de ponteiro */
+  background-color: transparent; /* Remove qualquer cor de fundo */
+  border: none; /* Remove bordas para manter apenas o ícone */
+  font-size: 24px; /* Aumenta o tamanho da fonte para destacar o ícone */
+  cursor: pointer; /* Define o cursor de ponteiro */
 }
 
 /* Estilos para a tabela onde os dados são exibidos */
 table {
-    width: 100%; /* Define a largura total para a tabela ocupar o espaço do container */
-    border-collapse: collapse; /* Remove os espaçamentos internos entre as células da tabela */
-    background-color: white; /* Cor de fundo branca para contraste com a área principal */
-    border-radius: 8px; /* Arredonda os cantos da tabela */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da tabela para efeito de profundidade */
-    overflow: hidden; /* Garante que qualquer conteúdo extra fique dentro dos limites da tabela */
+  width: 100%; /* Define a largura total para a tabela ocupar o espaço do container */
+  border-collapse: collapse; /* Remove os espaçamentos internos entre as células da tabela */
+  background-color: white; /* Cor de fundo branca para contraste com a área principal */
+  border-radius: 8px; /* Arredonda os cantos da tabela */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da tabela para efeito de profundidade */
+  overflow: hidden; /* Garante que qualquer conteúdo extra fique dentro dos limites da tabela */
 }
 
 /* Estilos para as células de cabeçalho (th) e dados (td) */
-th, td {
-    padding: 15px; /* Define padding interno de 15px para espaçamento */
-    text-align: left; /* Alinha o conteúdo à esquerda */
-    border-bottom: 1px solid #ddd; /* Linha divisória entre as linhas da tabela */
+th,
+td {
+  padding: 15px; /* Define padding interno de 15px para espaçamento */
+  text-align: left; /* Alinha o conteúdo à esquerda */
+  border-bottom: 1px solid #ddd; /* Linha divisória entre as linhas da tabela */
 }
 
 /* Cabeçalho da tabela */
 th {
-    background-color: #4CAF50; /* Cor de fundo verde para o cabeçalho */
-    color: white; /* Cor do texto em branco para contraste */
+  background-color: #4caf50; /* Cor de fundo verde para o cabeçalho */
+  color: white; /* Cor do texto em branco para contraste */
 }
 
 /* Células de dados da tabela */
 td {
-    font-size: 14px; /* Define o tamanho da fonte das células */
+  font-size: 14px; /* Define o tamanho da fonte das células */
 }
 
 /* Cor de fundo ao passar o mouse sobre uma linha da tabela */
 tr:hover {
-    background-color: #f1f1f1; /* Muda a cor de fundo ao passar o mouse para efeito visual */
+  background-color: #f1f1f1; /* Muda a cor de fundo ao passar o mouse para efeito visual */
 }
 
 /* Botões para remover e editar itens na tabela */
-.remove-btn, .edit-btn {
-    background-color: transparent; /* Remove o fundo para manter apenas o ícone */
-    border: none; /* Remove bordas para um visual limpo */
-    cursor: pointer; /* Define o cursor de ponteiro para indicar interatividade */
-    font-size: 18px; /* Define o tamanho da fonte dos ícones */
+.remove-btn,
+.edit-btn {
+  background-color: transparent; /* Remove o fundo para manter apenas o ícone */
+  border: none; /* Remove bordas para um visual limpo */
+  cursor: pointer; /* Define o cursor de ponteiro para indicar interatividade */
+  font-size: 18px; /* Define o tamanho da fonte dos ícones */
 }
 
 /* Botão de remover com cor vermelha */
 .remove-btn {
-    color: #e53935; /* Define a cor vermelha para o ícone de remoção */
+  color: #e53935; /* Define a cor vermelha para o ícone de remoção */
 }
 
 /* Botão de editar com cor verde */
 .edit-btn {
-    color: #4CAF50; /* Define a cor verde para o ícone de edição */
+  color: #4caf50; /* Define a cor verde para o ícone de edição */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  /* Ajusta o container */
+  .container {
+    padding: 10px;
+  }
+
+  /* Estiliza a barra de busca */
+  .search-bar {
+    width: 65%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Ajusta os botões de adicionar usuário e home (ícone de casa) de forma similar */
+  .add-user-btn,
+  .home-btn {
+    width: 40px; /* Define a largura do botão para 40px */
+    height: 40px; /* Define a altura do botão para 40px */
+    font-size: 1rem; /* Define o tamanho da fonte do ícone para 1rem */
+    padding: 5px; /* Define o padding de 5px para dar um espaçamento interno */
+  }
+
+  /* Estiliza especificamente o botão da home (ícone de casa) */
+  .home-btn {
+    background-color: transparent; /* Remove qualquer cor de fundo */
+    border: none; /* Remove as bordas para manter apenas o ícone */
+    font-size: 22px; /* Aumenta o tamanho do ícone para 22px */
+    cursor: pointer; /* Define o cursor de ponteiro para indicar que o botão é clicável */
+    padding: 10px; /* Aumenta o padding para tornar o botão maior e mais fácil de clicar */
+  }
+
+  /* Mantém a tabela visível */
+  table {
+    width: 100%;
+    font-size: 0.85rem; /* Reduz o tamanho do texto */
+  }
+
+  /* Espaçamento e alinhamento das células */
+  th,
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  /* Remove bordas para visual mais limpo */
+  tr {
+    border: none;
+  }
+
+  /* Ajusta os ícones */
+  .remove-btn,
+  .edit-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Configurações para telas médias (de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Ajuste do cabeçalho */
+  .header {
+    flex-direction: row; /* Exibe os elementos lado a lado */
+    justify-content: space-between; /* Distribui espaço entre os itens */
+  }
+
+  /* Barra de pesquisa ocupa 70% da largura */
+  .search-bar {
+    width: 70%; /* Reduz um pouco a largura para não ocupar toda a tela */
+    padding: 10px;
+    font-size: 16px; /* Tamanho da fonte maior que em telas pequenas */
+  }
+
+  /* Botão de adicionar usuário */
+  .add-user-btn {
+    padding: 10px 15px; /* Aumenta o tamanho do botão */
+    font-size: 20px; /* Fonte maior para o botão */
+  }
+
+  /* Ajuste da tabela */
+  th,
+  td {
+    font-size: 14px; /* Tamanho médio para as células */
+    padding: 12px; /* Aumenta o padding para maior conforto visual */
+  }
+}
+
+/* Configurações para telas grandes (acima de 1024px) */
+@media (min-width: 1025px) {
+  /* Cabeçalho com distribuição padrão */
+  .header {
+    flex-direction: row; /* Layout em linha para telas maiores */
+    justify-content: space-between; /* Espaço entre os itens */
+  }
+
+  /* Barra de pesquisa ocupa 60% da largura */
+  .search-bar {
+    width: 60%; /* Barra de pesquisa com um tamanho mais fixo */
+    padding: 12px; /* Maior padding para visualização confortável */
+    font-size: 18px; /* Maior fonte para facilitar a leitura */
+  }
+
+  /* Botão de adicionar usuário */
+  .add-user-btn {
+    padding: 12px 20px; /* Tamanho maior para o botão */
+    font-size: 24px; /* Fonte grande para o botão */
+  }
+
+  /* Tabela com células e texto normais */
+  th,
+  td {
+    font-size: 16px; /* Tamanho da fonte ideal para desktops */
+    padding: 15px; /* Padding confortável para a tabela */
+  }
 }

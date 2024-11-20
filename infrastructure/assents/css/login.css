@@ -1,8 +1,8 @@
 /* ================================================
-   1. Flexbox - Centralização de conteúdo
+   1. Background e Layout Geral
 ================================================ */
 body {
-    background-image: url("../images/login-walpaper.jpg"); /* Caminho para a imagem de fundo */
+    background-image: url("../images/login-walpaper.jpg"); /* Verifique o caminho da imagem */
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem de fundo */
     display: flex; /* Usa flexbox para centralizar o conteúdo */
@@ -15,98 +15,45 @@ body {
 }
 
 /* ================================================
-   2. Containers - Layout do formulário de login
+   2. Estilização do Formulário (login-container)
 ================================================ */
-
 .login-container {
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
-    padding: 20px; /* Espaço interno ao redor do conteúdo */
+    width: 100%; /* Responsivo */
+    max-width: 400px; /* Limita a largura máxima */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
-    width: 300px; /* Largura fixa do contêiner */
-    text-align: center; /* Centraliza o texto */
-    margin: auto; /* Adiciona margem automática para centralizar caso o flexbox falhe */
-    position: relative; /* Garante que o contêiner respeite a centralização */
 }
 
 /* ================================================
-   3. Estilização Avançada - Títulos e campos
+   3. Ajustes para os Botões
 ================================================ */
-/* Título do formulário */
-.login-container h1 {
-    font-family: Arial, sans-serif; /* Fonte do título */
-    font-size: 24px; /* Tamanho da fonte */
-    color: #333; /* Cor do título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+.btn {
+    padding: 10px; /* Adiciona espaçamento interno */
+    font-size: 14px; /* Define o tamanho da fonte */
 }
 
-/* Campos de entrada */
-.login-container input[type="text"],
-.login-container input[type="password"] {
-    width: 100%; /* Largura completa */
-    padding: 10px; /* Espaço interno no campo */
-    margin: 10px 0; /* Espaço acima e abaixo de cada campo */
-    border: 1px solid #ccc; /* Borda leve ao redor do campo */
-    border-radius: 5px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
-    font-size: 14px; /* Tamanho da fonte */
+/* Estilos para o efeito hover nos botões */
+.btn:hover {
+    opacity: 0.8;
 }
 
 /* ================================================
-   4. Estilização Avançada - Botões
+   4. Responsividade - Media Queries
 ================================================ */
-/* Botão "Entrar" */
-.login-container input.entrar {
-    background-color: #4CAF50; /* Fundo verde */
-    width: 48%; /* Largura dos botões */
-    padding: 10px; /* Espaço interno */
-    margin: 5px; /* Espaçamento ao redor */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 14px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor em forma de mão */
-    color: #fff; /* Texto branco */
-}
-
-/* Botão "Cadastrar" */
-.login-container input.cadastrar {
-    background-color: #2196F3; /* Fundo azul */
-    width: 48%; /* Largura dos botões */
-    padding: 10px; /* Espaço interno */
-    margin: 5px; /* Espaçamento ao redor */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 14px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor em forma de mão */
-    color: #fff; /* Texto branco */
-}
-
-/* Efeito hover para os botões */
-.login-container input.entrar:hover,
-.login-container input.cadastrar:hover {
-    opacity: 0.8; /* Torna os botões ligeiramente transparentes ao passar o mouse */
-}
-
-/* ================================================
-   5. Media Queries - Ajustes responsivos
-================================================ */
-/* Para telas pequenas */
 @media (max-width: 600px) {
-    .login-container {
-        width: 70%; /* Ajusta a largura do contêiner para telas menores */
-    }
+  .login-container {
+    width: 70%; /* Reduz a largura para telas menores */
+  }
 }
 
-/* Para telas médias */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .login-container {
-        width: 400px; /* Ajusta a largura para telas médias */
-    }
+  .login-container {
+    width: 400px; /* Ajusta a largura para telas médias */
+  }
 }
 
-/* Para telas grandes */
 @media (min-width: 1025px) {
-    .login-container {
-        width: 500px; /* Ajusta a largura para telas maiores */
-    }
+  .login-container {
+    width: 500px; /* Ajusta a largura para telas grandes */
+  }
 }

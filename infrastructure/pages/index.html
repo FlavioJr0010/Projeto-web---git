@@ -1,131 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Determinando o favicon no projeto -->
-    <link
-      rel="shortcut icon"
-      href="../assents/images/favicon.ico"
-      type="image/x-icon"
-    />
-
-    <!--Determinando a conexão entre o css com o html-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../assents/css/style.css"
-    />
-
-    <!--Determinando a conexão entre do css específico para o index-->
-    <link rel="stylesheet" 
-    type="text/css" 
-    href="../assents/css/page-index.css"
-    />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ícone do site -->
+    <link rel="shortcut icon" href="../assents/images/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" href="../assents/css/style.css">
+    <link rel="stylesheet" href="../assents/css/page-index.css">
     <title>Atividade03</title>
-
-  </head>
-
-  <body>  
-
-    <div id="interface" class="">
-      <header id="cabecalho">
-          <hgroup>
-              <h1>Pagina Inicial</h1>
-              <h2>Bem vindo a uma pagina de sucesso potência</h2>
-          </hgroup>
-
-
-      </header>
-  </div>
-
-  <div>
-    <!--incio do nav dentro do header-->
-    <nav id="menu">
-      <h1>Menu principal</h1>
-      <!--Link que redireciona para o sandbox.html-->
-      <ul>
-        <li><a href="index.html">Página principal</a></li>
-        <li><a href="../pages/sandbox.html">Sandbox</a></li>
-        <li><a href="../pages/login.html">Login</a></li>
-        <li><a href="index.html">Sobre nós</a></li>
-        <li><a href="index.html">Contato</a></li>
-      </ul>
-    </nav> <!--Fim do nav-->
-</div>
-  
-
-
-    <div id="definicoes" class="container">
-      <!--Inicio da main-->
-    <main>
-      <!--Inicio do article-->
-      <article>
-        <!-- Define o picture com 3 opções de fotos com cada uma tendo proporções diferentes-->
-        <div>
-          <picture>
-            <!-- Imagem para telas pequenas (até 600px de largura) -->
-            <!--  Essa imagem tem 400 x 266 pixels -->
-            <source
-              media="(max-width: 600px)"
-              src="..//assents/images/pessoa-surpresa2"
-              type="image/jpeg"
-            />
-            <!-- Imagem para telas médias (entre 601px e 1024px de largura) -->
-            <!--  Essa imagem tem 600 x 465 pixels -->
-            <source
-              media="(min-width: 601px) and (max-width: 1024px)"
-              src="..//assets/images/pessoa-surpresa3.jpg"
-              type="image/jpeg"
-            />
-            <!-- Imagem para telas grandes (mais de 1024px de largura) -->
-            <!--  Essa imagem tem 800 x 533 pixels -->
-            <img
-              src="..//assents/images/pessoa-surpresa1.jpg"
-              alt="Imagem de pessoa surpresa"
-            />
-          </picture>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <h1>Pagina Inicial</h1>
+            <h2>Bem vindo a uma pagina de sucesso potência</h2>
         </div>
-      </article><!--Fim do article-->
+    </header>
 
-      <!--inicio do article-->
-      <article>
-        <h1 class="configurar">O que será o projeto ?</h1>
-
-        <!--Paragrafo com as informações do projeto-->
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
-          nibh vitae nulla pulvinar lobortis. Pellentesque varius posuere erat
-          quis ornare. Nam convallis dolor in justo blandit, a luctus odio
-          varius. Vestibulum sagittis venenatis ex non pulvinar. Morbi aliquet
-          sapien turpis, in suscipit nisi sagittis non. Nam mollis commodo
-          lorem, sed aliquam justo. Sed porttitor ligula sit amet tempor
-          interdum. In id dignissim massa. Ut ac convallis risus. Sed non
-          elementum purus. Aliquam quis sem commodo, fringilla mi ultricies,
-          egestas diam. Proin suscipit semper neque in gravida. In sit amet
-          sapien vitae ligula luctus vulputate.
-        </p>
-
-        <h1 class="configurar">Cores do projeto definida</h1>
-        <!--div para separar-->
-        <div class="centralizar">
-          <!--Chamada das cores do projeto-->
-          <p class="circle color1"></p>
-          <p class="circle color2"></p>
-          <p class="circle color3"></p>
-          <p class="circle color4"></p>
-          <p class="circle color5"></p>
-          <p class="circle color6"></p>
+    <!-- Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- Links do menu -->
+                    <li class="nav-item"><a class="nav-link" href="index.html">Página Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/sandbox.html">Sandbox</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Contato</a></li>
+                </ul>
+            </div>
         </div>
-      </article>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+        <!-- Seção com imagem responsiva -->
+        <section class="text-center">
+            <picture>
+                <!-- Imagem para telas pequenas -->
+                <source media="(max-width: 600px)" srcset="..//assents/images/pessoa-surpresa2.jpg">
+                <!-- Imagem para telas médias -->
+                <source media="(min-width: 601px) and (max-width: 1024px)" srcset="..//assents/images/pessoa-surpresa3.jpg">
+                <!-- Imagem padrão -->
+                <img src="..//assents/images/pessoa-surpresa1.jpg" alt="Imagem de pessoa surpresa" class="img-fluid">
+            </picture>
+        </section>
+
+        <!-- Seção com informações sobre o projeto -->
+        <section class="text-center mt-5">
+            <h1>O que será o projeto?</h1>
+            <p class="mt-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et
+                nibh vitae nulla pulvinar lobortis. Pellentesque varius posuere erat
+                quis ornare. Nam convallis dolor in justo blandit, a luctus odio
+                varius.
+            </p>
+
+            <!-- Seção com as cores do projeto -->
+            <h1 class="mt-5">Cores do projeto definida</h1>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <!-- Círculos representando as cores -->
+                <div class="circle color1"></div>
+                <div class="circle color2"></div>
+                <div class="circle color3"></div>
+                <div class="circle color4"></div>
+                <div class="circle color5"></div>
+                <div class="circle color6"></div>
+            </div>
+        </section>
     </main>
 
-    <!--Radapé do projeto-->
-    <footer>
-      <p>Pagina inicial criada pelo aluno Flávio</p>
+    <!-- Rodapé -->
+    <footer class="bg-light text-center py-3">
+        <p>Pagina inicial criada pelo aluno Flávio</p>
     </footer>
-    <!--Fim do rodapé-->
-    </div>
-  </body>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
