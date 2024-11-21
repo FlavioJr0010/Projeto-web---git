@@ -5,73 +5,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela listar</title>
-    <!-- Determinando o favicon no projeto -->
-    <link
-      rel="shortcut icon"
-      href="../assents/images/favicon.ico"
-      type="image/x-icon"
-    />
 
-    <!-- Link para o arquivo CSS externo -->
-    <link rel="stylesheet" href="../assents/css/tela-listar.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assents/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Container principal da página -->
-    <main class="container">
-      <!-- Seção principal da tela -->
-      <section class="main-content">
-        <!-- Cabeçalho da seção, contendo barra de busca e botões -->
-        <header class="header">
-          <!-- Campo de texto para busca -->
-          <input type="text" placeholder="Procurar..." class="search-bar" />
+    <div class="container my-4">
+      <!-- Barra de busca e botões -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <!-- Barra de pesquisa -->
+        <input
+          type="text"
+          class="form-control w-50"
+          placeholder="Procurar..."
+          aria-label="Barra de pesquisa"
+        />
 
-          <!-- Botão para adicionar um novo usuário -->
-          <button class="add-user-btn">+</button>
+        <!-- Botões -->
+        <div>
+          <button class="btn btn-primary rounded-circle me-2">+</button>
+          <button class="btn btn-outline-secondary">🏠</button>
+        </div>
+      </div>
 
-          <!-- Botão para voltar à página inicial -->
-          <button class="home-btn">🏠</button>
-        </header>
+      <!-- Tabela -->
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="table-success">
+            <tr>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Idade</th>
+              <th>Sexo</th>
+              <th>Remover</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Edson Gomes</td>
+              <td>edson.gomes@teste.com</td>
+              <td>72</td>
+              <td>Masculino</td>
+              <td>
+                <button class="btn btn-danger btn-sm">🗑️</button>
+              </td>
+              <td>
+                <button class="btn btn-success btn-sm">✏️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-        <!-- Artigo contendo a tabela de dados -->
-        <article>
-          <table>
-            <!-- Cabeçalho da tabela -->
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <!-- Coluna de nome -->
-                <th>Email</th>
-                <!-- Coluna de quantidade -->
-                <th>Idade</th>
-                <!-- Coluna de descrição -->
-                <th>Sexo</th>
-                <!-- Coluna de fornecedor -->
-                <th>Remover</th>
-                <!-- Coluna de botão para remover -->
-                <th>Editar</th>
-                <!-- Coluna de botão para editar -->
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Linha de exemplo de dados -->
-              <tr>
-                <td>Edson Gomes</td>
-                <!-- Nome do item -->
-                <td>edson.gomes@teste.com</td>
-                <!-- Quantidade do item -->
-                <td>72</td>
-                <!-- Descrição do item -->
-                <td>Masculino</td>
-                <!-- Fornecedor do item -->
-                <!-- Botão para remover o item -->
-                <td><button class="remove-btn">🗑️</button></td>
-                <!-- Botão para editar o item -->
-                <td><button class="edit-btn">✏️</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-      </section>
-    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
