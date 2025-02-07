@@ -26,8 +26,8 @@
 
         <!-- Botões -->
         <div>
-          <button class="btn btn-primary rounded-circle me-2">+</button>
-          <button class="btn btn-outline-secondary">🏠</button>
+          <button id="btnCadastro" class="btn btn-primary rounded-circle me-2">+</button>
+          <button id="btnHome" class="btn btn-outline-secondary">🏠</button>
         </div>
       </div>
 
@@ -38,31 +38,48 @@
             <tr>
               <th>Nome</th>
               <th>Email</th>
-              <th>Idade</th>
-              <th>Sexo</th>
+              <th>Login</th>
               <th>Remover</th>
               <th>Editar</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Edson Gomes</td>
-              <td>edson.gomes@teste.com</td>
-              <td>72</td>
-              <td>Masculino</td>
-              <td>
-                <button class="btn btn-danger btn-sm">🗑️</button>
-              </td>
-              <td>
-                <button class="btn btn-success btn-sm">✏️</button>
-              </td>
-            </tr>
+        
           </tbody>
         </table>
       </div>
     </div>
 
+    <!-- Modal para Editar Usuário -->
+<div id="modalEditar" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Editar Usuário</h2>
+      <form id="formEditar">
+          <label for="editarNome">Nome:</label>
+          <input type="text" id="editarNome" required>
+
+          <label for="editarLogin">Login:</label>
+          <input type="text" id="editarLogin" required>
+
+          <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+      </form>
+  </div>
+</div>
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assents/js/FindAll.js"></script>
+
+    <script>
+      document.getElementById("btnCadastro").addEventListener("click", function () {
+          window.location.href = "../pages/cadastro-tela.html"; // Redireciona para a tela de cadastro
+      });
+  
+      document.getElementById("btnHome").addEventListener("click", function () {
+          window.location.href = "../pages/index.html"; // Redireciona para a página inicial
+      });
+  </script>
   </body>
 </html>

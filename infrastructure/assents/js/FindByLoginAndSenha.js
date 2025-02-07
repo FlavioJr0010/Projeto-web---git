@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (data.success !== undefined ? data.success : data.login) {
                     alert("✅ Login bem-sucedido!");
                     form.reset(); // Limpa os campos do formulário
+                    window.location.href = "../pages/tela-listar.html";
                 } else {
                     alert("⚠️ Login ou senha incorretos.");
                 }

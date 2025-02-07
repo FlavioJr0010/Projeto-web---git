@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Evento para redirecionar ao clicar no botão "Listar"
     btnListar.addEventListener("click", function () {
-        window.location.href = "../pages/login.html";
+        window.location.href = "../pages/tela-listar.html";
     });
 
     form.addEventListener("submit", async function (event) {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 form.reset(); // Limpa os campos do formulário
 
                 // Redireciona automaticamente para a tela de listagem após o cadastro
-                window.location.href = "../pages/login.html";
+                window.location.href = "../pages/tela-listar.html";
             } else {
                 alert("❌ Erro ao cadastrar usuário. Verifique os dados e tente novamente.");
             }
